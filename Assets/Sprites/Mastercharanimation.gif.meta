@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 681f07799f9d74f06b23f334f1ec6288
-timeCreated: 1468112537
+timeCreated: 1468377681
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -39,6 +39,31 @@ TextureImporter:
     21300064: Mastercharanimation_32
     21300066: Mastercharanimation_33
     21300068: Mastercharanimation_34
+    21300070: Mastercharanimation_35
+    21300072: Mastercharanimation_36
+    21300074: Mastercharanimation_37
+    21300076: Mastercharanimation_38
+    21300078: Mastercharanimation_39
+    21300080: Mastercharanimation_40
+    21300082: Mastercharanimation_41
+    21300084: Mastercharanimation_42
+    21300086: Mastercharanimation_43
+    21300088: Mastercharanimation_44
+    21300090: Mastercharanimation_45
+    21300092: Mastercharanimation_46
+    21300094: Mastercharanimation_47
+    21300096: Mastercharanimation_48
+    21300098: Mastercharanimation_49
+    21300100: Mastercharanimation_50
+    21300102: Mastercharanimation_51
+    21300104: Mastercharanimation_52
+    21300106: Mastercharanimation_53
+    21300108: Mastercharanimation_54
+    21300110: Mastercharanimation_55
+    21300112: Mastercharanimation_56
+    21300114: Mastercharanimation_57
+    21300116: Mastercharanimation_58
+    21300118: Mastercharanimation_59
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,7 +87,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -2
-  maxTextureSize: 512
+  maxTextureSize: 1024
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -89,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -111,7 +136,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 50
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -132,7 +157,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -155,7 +180,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -175,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 200
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -196,7 +221,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 250
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -221,7 +246,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 375
+        y: 301
         width: 50
         height: 75
       alignment: 0
@@ -241,8 +266,111 @@ TextureImporter:
     - name: Mastercharanimation_7
       rect:
         serializedVersion: 2
+        x: 350
+        y: 301
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 23.5}
+        - {x: -12, y: 20.5}
+        - {x: -15, y: 14.5}
+        - {x: -15, y: -4.5}
+        - {x: -8, y: -24.5}
+        - {x: 7, y: -24.5}
+        - {x: 14, y: -12.5}
+        - {x: 14, y: 18.5}
+        - {x: 7, y: 23.5}
+    - name: Mastercharanimation_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 301
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 25.5}
+        - {x: -15, y: 15.5}
+        - {x: -15, y: 6.5}
+        - {x: -2, y: -25.5}
+        - {x: 3, y: -25.5}
+        - {x: 14, y: -23.5}
+        - {x: 14, y: 25.5}
+    - name: Mastercharanimation_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 301
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: -19.5}
+        - {x: 14, y: -8.5}
+        - {x: 14, y: 14.5}
+        - {x: 5, y: 19.5}
+        - {x: -6, y: 19.5}
+        - {x: -14, y: 5.5}
+        - {x: -14, y: -2.5}
+        - {x: -13, y: -6.5}
+        - {x: -7, y: -19.5}
+        - {x: -2, y: -19.5}
+        - {x: 0, y: -17.5}
+        - {x: 0, y: -15.5}
+        - {x: 3, y: -19.5}
+    - name: Mastercharanimation_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 301
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 27.5}
+        - {x: -13, y: 15.5}
+        - {x: -15, y: 3.5}
+        - {x: -12, y: -1.5}
+        - {x: -5, y: -26.5}
+        - {x: -4, y: -27.5}
+        - {x: 2, y: -27.5}
+        - {x: 15, y: -8.5}
+        - {x: 15, y: 19.5}
+        - {x: 2, y: 27.5}
+    - name: Mastercharanimation_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 301
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 19.5}
+        - {x: 3, y: 22.5}
+        - {x: -7, y: 22.5}
+        - {x: -15, y: 6.5}
+        - {x: -15, y: -22.5}
+        - {x: -13, y: -23.5}
+        - {x: 11, y: -23.5}
+        - {x: 15, y: -2.5}
+        - {x: 15, y: 8.5}
+    - name: Mastercharanimation_12
+      rect:
+        serializedVersion: 2
         x: 0
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -256,11 +384,11 @@ TextureImporter:
         - {x: -9, y: -26.5}
         - {x: 12, y: -26.5}
         - {x: 12, y: 19.5}
-    - name: Mastercharanimation_8
+    - name: Mastercharanimation_13
       rect:
         serializedVersion: 2
         x: 50
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -278,11 +406,11 @@ TextureImporter:
         - {x: 17, y: -24.5}
         - {x: 16, y: -16.5}
         - {x: 16, y: 25.5}
-    - name: Mastercharanimation_9
+    - name: Mastercharanimation_14
       rect:
         serializedVersion: 2
         x: 100
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -305,11 +433,11 @@ TextureImporter:
         - {x: 18, y: -10.5}
         - {x: 18, y: 17.5}
         - {x: 9, y: 25.5}
-    - name: Mastercharanimation_10
+    - name: Mastercharanimation_15
       rect:
         serializedVersion: 2
         x: 150
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -324,11 +452,11 @@ TextureImporter:
         - {x: 21, y: -6.5}
         - {x: 21, y: 21.5}
         - {x: 12, y: 27.5}
-    - name: Mastercharanimation_11
+    - name: Mastercharanimation_16
       rect:
         serializedVersion: 2
         x: 200
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -343,11 +471,11 @@ TextureImporter:
         - {x: 20, y: -25.5}
         - {x: 20, y: 28.5}
         - {x: 16, y: 30.5}
-    - name: Mastercharanimation_12
+    - name: Mastercharanimation_17
       rect:
         serializedVersion: 2
         x: 250
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -368,11 +496,11 @@ TextureImporter:
         - {x: 0, y: -21.5}
         - {x: 8, y: -12.5}
         - {x: 17, y: 3.5}
-    - name: Mastercharanimation_13
+    - name: Mastercharanimation_18
       rect:
         serializedVersion: 2
         x: 300
-        y: 300
+        y: 226
         width: 50
         height: 75
       alignment: 0
@@ -386,11 +514,123 @@ TextureImporter:
         - {x: 19, y: -25.5}
         - {x: 19, y: 13.5}
         - {x: 11, y: 25.5}
-    - name: Mastercharanimation_14
+    - name: Mastercharanimation_19
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 226
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 17.5}
+        - {x: 12, y: 14.5}
+        - {x: 12, y: 19.5}
+        - {x: 15, y: 24.5}
+        - {x: 8, y: 27.5}
+        - {x: -6, y: 27.5}
+        - {x: -21, y: 5.5}
+        - {x: -21, y: -19.5}
+        - {x: -20, y: -23.5}
+        - {x: -11, y: -26.5}
+        - {x: 8, y: -26.5}
+        - {x: 20, y: -15.5}
+        - {x: 21, y: -8.5}
+        - {x: 21, y: 20.5}
+        - {x: 13, y: 20.5}
+    - name: Mastercharanimation_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 226
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 29.5}
+        - {x: -23, y: 29.5}
+        - {x: -25, y: 17.5}
+        - {x: -25, y: 6.5}
+        - {x: -22, y: 3.5}
+        - {x: -19, y: 2.5}
+        - {x: -9, y: -15.5}
+        - {x: -2, y: -15.5}
+        - {x: 11, y: -23.5}
+        - {x: 19, y: -28.5}
+        - {x: 24, y: -28.5}
+        - {x: 25, y: -27.5}
+        - {x: 25, y: -17.5}
+        - {x: 13, y: 27.5}
+    - name: Mastercharanimation_21
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 226
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 25.5}
+        - {x: -18, y: 10.5}
+        - {x: -18, y: -24.5}
+        - {x: 12, y: -24.5}
+        - {x: 18, y: -18.5}
+        - {x: 18, y: 24.5}
+        - {x: 15, y: 25.5}
+    - name: Mastercharanimation_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 226
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 17.5}
+        - {x: -20, y: 17.5}
+        - {x: -25, y: 6.5}
+        - {x: -25, y: -7.5}
+        - {x: -22, y: -14.5}
+        - {x: -5, y: -16.5}
+        - {x: 24, y: -16.5}
+        - {x: 24, y: -10.5}
+        - {x: 4, y: 13.5}
+    - name: Mastercharanimation_23
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 226
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 25.5}
+        - {x: -7, y: 25.5}
+        - {x: -20, y: 18.5}
+        - {x: -20, y: -24.5}
+        - {x: -15, y: -24.5}
+        - {x: -12, y: -22.5}
+        - {x: -10, y: -20.5}
+        - {x: 1, y: -24.5}
+        - {x: 6, y: -24.5}
+        - {x: 12, y: -17.5}
+        - {x: 19, y: 0.5}
+        - {x: 19, y: 20.5}
+    - name: Mastercharanimation_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -404,11 +644,11 @@ TextureImporter:
         - {x: 8, y: -22.5}
         - {x: 8, y: 24.5}
         - {x: 6, y: 26.5}
-    - name: Mastercharanimation_15
+    - name: Mastercharanimation_25
       rect:
         serializedVersion: 2
         x: 50
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -431,11 +671,11 @@ TextureImporter:
         - {x: 9, y: -27.5}
         - {x: 21, y: -27.5}
         - {x: 21, y: 21.5}
-    - name: Mastercharanimation_16
+    - name: Mastercharanimation_26
       rect:
         serializedVersion: 2
         x: 100
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -452,11 +692,11 @@ TextureImporter:
         - {x: -3, y: -28.5}
         - {x: 5, y: -20.5}
         - {x: 11, y: -13.5}
-    - name: Mastercharanimation_17
+    - name: Mastercharanimation_27
       rect:
         serializedVersion: 2
         x: 150
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -476,11 +716,11 @@ TextureImporter:
         - {x: 22, y: -17.5}
         - {x: 23, y: -14.5}
         - {x: 23, y: 14.5}
-    - name: Mastercharanimation_18
+    - name: Mastercharanimation_28
       rect:
         serializedVersion: 2
         x: 200
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -499,11 +739,11 @@ TextureImporter:
         - {x: 15, y: -23.5}
         - {x: 20, y: 14.5}
         - {x: 20, y: 19.5}
-    - name: Mastercharanimation_19
+    - name: Mastercharanimation_29
       rect:
         serializedVersion: 2
         x: 250
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -519,11 +759,11 @@ TextureImporter:
         - {x: 17, y: -10.5}
         - {x: 17, y: 16.5}
         - {x: 12, y: 26.5}
-    - name: Mastercharanimation_20
+    - name: Mastercharanimation_30
       rect:
         serializedVersion: 2
         x: 300
-        y: 225
+        y: 151
         width: 50
         height: 75
       alignment: 0
@@ -544,11 +784,132 @@ TextureImporter:
         - {x: -10, y: -28.5}
         - {x: 1, y: -16.5}
         - {x: 5, y: -12.5}
-    - name: Mastercharanimation_21
+    - name: Mastercharanimation_31
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 151
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: -1.5}
+        - {x: -18, y: -26.5}
+        - {x: -15, y: -28.5}
+        - {x: 9, y: -28.5}
+        - {x: 18, y: -23.5}
+        - {x: 18, y: 28.5}
+        - {x: 0, y: 28.5}
+        - {x: -15, y: 10.5}
+    - name: Mastercharanimation_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 151
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 9.5}
+        - {x: -22, y: -0.5}
+        - {x: -16, y: -12.5}
+        - {x: 10, y: -23.5}
+        - {x: 21, y: -23.5}
+        - {x: 21, y: -17.5}
+        - {x: 6, y: 10.5}
+        - {x: -7, y: 23.5}
+        - {x: -12, y: 23.5}
+        - {x: -19, y: 21.5}
+    - name: Mastercharanimation_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 151
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 23.5}
+        - {x: -13, y: 8.5}
+        - {x: -17, y: -14.5}
+        - {x: -18, y: -21.5}
+        - {x: -18, y: -23.5}
+        - {x: 11, y: -23.5}
+        - {x: 17, y: -12.5}
+        - {x: 17, y: 17.5}
+        - {x: 9, y: 23.5}
+      - - {x: 22, y: -7.5}
+        - {x: 24, y: -9.5}
+        - {x: 25, y: -9.5}
+        - {x: 25, y: -2.5}
+        - {x: 22, y: -3.5}
+    - name: Mastercharanimation_34
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 151
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -5.5}
+        - {x: 12, y: -5.5}
+        - {x: 15, y: -5.5}
+        - {x: 19, y: -3.5}
+        - {x: 19, y: 8.5}
+        - {x: -2, y: 19.5}
+        - {x: -24, y: 19.5}
+        - {x: -25, y: 18.5}
+        - {x: -25, y: -13.5}
+        - {x: -23, y: -17.5}
+        - {x: 25, y: -17.5}
+        - {x: 25, y: -9.5}
+        - {x: 23, y: -6.5}
+    - name: Mastercharanimation_35
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 151
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 12.5}
+        - {x: 12, y: 11.5}
+        - {x: 11, y: 7.5}
+        - {x: 11, y: 9.5}
+        - {x: 12, y: 10.5}
+        - {x: 13, y: 14.5}
+        - {x: 12, y: 20.5}
+        - {x: 8, y: 23.5}
+        - {x: -2, y: 23.5}
+        - {x: -19, y: 7.5}
+        - {x: -19, y: -23.5}
+        - {x: 1, y: -23.5}
+        - {x: 15, y: -21.5}
+        - {x: 19, y: -5.5}
+        - {x: 19, y: 12.5}
+        - {x: 18, y: 13.5}
+      - - {x: -25, y: -18.5}
+        - {x: -22, y: -17.5}
+        - {x: -22, y: -11.5}
+        - {x: -24, y: -9.5}
+        - {x: -25, y: -9.5}
+    - name: Mastercharanimation_36
       rect:
         serializedVersion: 2
         x: 0
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -568,11 +929,11 @@ TextureImporter:
         - {x: 1, y: -23.5}
         - {x: 1, y: -20.5}
         - {x: 1, y: -23.5}
-    - name: Mastercharanimation_22
+    - name: Mastercharanimation_37
       rect:
         serializedVersion: 2
         x: 50
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -588,11 +949,11 @@ TextureImporter:
         - {x: 13, y: -16.5}
         - {x: 19, y: 2.5}
         - {x: 19, y: 14.5}
-    - name: Mastercharanimation_23
+    - name: Mastercharanimation_38
       rect:
         serializedVersion: 2
         x: 100
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -606,11 +967,11 @@ TextureImporter:
         - {x: 14, y: -7.5}
         - {x: 14, y: 18.5}
         - {x: 5, y: 28.5}
-    - name: Mastercharanimation_24
+    - name: Mastercharanimation_39
       rect:
         serializedVersion: 2
         x: 150
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -627,11 +988,11 @@ TextureImporter:
         - {x: -3, y: -30.5}
         - {x: 18, y: -16.5}
         - {x: 18, y: 20.5}
-    - name: Mastercharanimation_25
+    - name: Mastercharanimation_40
       rect:
         serializedVersion: 2
         x: 200
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -647,11 +1008,11 @@ TextureImporter:
         - {x: 21, y: -26.5}
         - {x: 21, y: 4.5}
         - {x: 18, y: 22.5}
-    - name: Mastercharanimation_26
+    - name: Mastercharanimation_41
       rect:
         serializedVersion: 2
         x: 250
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -667,11 +1028,11 @@ TextureImporter:
         - {x: 15, y: -27.5}
         - {x: 16, y: -24.5}
         - {x: 16, y: 28.5}
-    - name: Mastercharanimation_27
+    - name: Mastercharanimation_42
       rect:
         serializedVersion: 2
         x: 300
-        y: 150
+        y: 76
         width: 50
         height: 75
       alignment: 0
@@ -685,11 +1046,102 @@ TextureImporter:
         - {x: 15, y: -7.5}
         - {x: 15, y: 21.5}
         - {x: 8, y: 31.5}
-    - name: Mastercharanimation_28
+    - name: Mastercharanimation_43
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 76
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 28.5}
+        - {x: -14, y: 22.5}
+        - {x: -14, y: -28.5}
+        - {x: 3, y: -28.5}
+        - {x: 14, y: -7.5}
+        - {x: 14, y: 18.5}
+        - {x: 5, y: 28.5}
+    - name: Mastercharanimation_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 76
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 26.5}
+        - {x: -10, y: 26.5}
+        - {x: -20, y: 8.5}
+        - {x: -20, y: -26.5}
+        - {x: 20, y: -26.5}
+        - {x: 20, y: -6.5}
+        - {x: 13, y: 25.5}
+    - name: Mastercharanimation_45
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 76
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: 26.5}
+        - {x: -13, y: 11.5}
+        - {x: -22, y: -17.5}
+        - {x: -22, y: -25.5}
+        - {x: 20, y: -25.5}
+        - {x: 21, y: -23.5}
+        - {x: 21, y: 20.5}
+        - {x: 13, y: 26.5}
+    - name: Mastercharanimation_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 76
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 14.5}
+        - {x: -24, y: 5.5}
+        - {x: -24, y: -7.5}
+        - {x: -16, y: -13.5}
+        - {x: 8, y: -13.5}
+        - {x: 24, y: -1.5}
+        - {x: 24, y: 14.5}
+    - name: Mastercharanimation_47
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 76
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 24.5}
+        - {x: -22, y: 1.5}
+        - {x: -22, y: -23.5}
+        - {x: 17, y: -23.5}
+        - {x: 21, y: -12.5}
+        - {x: 21, y: 18.5}
+        - {x: 12, y: 24.5}
+    - name: Mastercharanimation_48
       rect:
         serializedVersion: 2
         x: 0
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -707,11 +1159,11 @@ TextureImporter:
         - {x: 13, y: -13.5}
         - {x: 13, y: 3.5}
         - {x: 9, y: 21.5}
-    - name: Mastercharanimation_29
+    - name: Mastercharanimation_49
       rect:
         serializedVersion: 2
         x: 50
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -728,11 +1180,11 @@ TextureImporter:
         - {x: 15, y: -8.5}
         - {x: 15, y: 14.5}
         - {x: 10, y: 24.5}
-    - name: Mastercharanimation_30
+    - name: Mastercharanimation_50
       rect:
         serializedVersion: 2
         x: 100
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -753,11 +1205,11 @@ TextureImporter:
         - {x: 12, y: -4.5}
         - {x: 14, y: 6.5}
         - {x: 14, y: 17.5}
-    - name: Mastercharanimation_31
+    - name: Mastercharanimation_51
       rect:
         serializedVersion: 2
         x: 150
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -774,11 +1226,11 @@ TextureImporter:
         - {x: 15, y: 1.5}
         - {x: 15, y: 10.5}
         - {x: 4, y: 26.5}
-    - name: Mastercharanimation_32
+    - name: Mastercharanimation_52
       rect:
         serializedVersion: 2
         x: 200
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -794,11 +1246,11 @@ TextureImporter:
         - {x: 15, y: -9.5}
         - {x: 15, y: 14.5}
         - {x: 4, y: 28.5}
-    - name: Mastercharanimation_33
+    - name: Mastercharanimation_53
       rect:
         serializedVersion: 2
         x: 250
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -817,11 +1269,11 @@ TextureImporter:
         - {x: 11, y: -10.5}
         - {x: 13, y: 7.5}
         - {x: 13, y: 15.5}
-    - name: Mastercharanimation_34
+    - name: Mastercharanimation_54
       rect:
         serializedVersion: 2
         x: 300
-        y: 75
+        y: 1
         width: 50
         height: 75
       alignment: 0
@@ -839,6 +1291,107 @@ TextureImporter:
         - {x: 11, y: -16.5}
         - {x: 14, y: -2.5}
         - {x: 14, y: 16.5}
+    - name: Mastercharanimation_55
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 24.5}
+        - {x: -10, y: 20.5}
+        - {x: -15, y: 12.5}
+        - {x: -15, y: -18.5}
+        - {x: -13, y: -22.5}
+        - {x: -8, y: -23.5}
+        - {x: 6, y: -23.5}
+        - {x: 14, y: -5.5}
+        - {x: 14, y: 10.5}
+        - {x: 9, y: 24.5}
+    - name: Mastercharanimation_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 4.5}
+        - {x: 8, y: 22.5}
+        - {x: 6, y: 23.5}
+        - {x: -3, y: 23.5}
+        - {x: -12, y: -3.5}
+        - {x: -12, y: -23.5}
+        - {x: -10, y: -26.5}
+        - {x: 7, y: -26.5}
+        - {x: 15, y: -21.5}
+        - {x: 15, y: -7.5}
+        - {x: 13, y: -6.5}
+    - name: Mastercharanimation_57
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 19.5}
+        - {x: -15, y: 6.5}
+        - {x: -15, y: -14.5}
+        - {x: -12, y: -19.5}
+        - {x: 9, y: -19.5}
+        - {x: 14, y: -1.5}
+        - {x: 14, y: 9.5}
+        - {x: 3, y: 19.5}
+    - name: Mastercharanimation_58
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 27.5}
+        - {x: -14, y: 27.5}
+        - {x: -15, y: 26.5}
+        - {x: -15, y: -23.5}
+        - {x: -13, y: -27.5}
+        - {x: 4, y: -27.5}
+        - {x: 14, y: -15.5}
+        - {x: 15, y: -3.5}
+        - {x: 15, y: 13.5}
+    - name: Mastercharanimation_59
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1
+        width: 50
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 23.5}
+        - {x: -7, y: 23.5}
+        - {x: -15, y: 7.5}
+        - {x: -15, y: -22.5}
+        - {x: 12, y: -22.5}
+        - {x: 15, y: -3.5}
+        - {x: 15, y: 9.5}
+        - {x: 10, y: 20.5}
     outline: []
   spritePackingTag: 
   userData: 
