@@ -41,6 +41,39 @@ public class PlayerControls : MonoBehaviour {
 		anim.SetBool ("isSliding", isSliding);
 	}
 
+	void Move(){
+		Vector3 moveDir = Vector3.zero;
+		if (Input.GetAxis ("Horizontal") > 0) {
+			moveDir += Vector3.right;
+			GetComponent<SpriteRenderer> ().flipX = false;
+		} else if (Input.GetAxis ("Horizontal") < 0) {
+			moveDir -= Vector3.right;
+			GetComponent<SpriteRenderer> ().flipX = true;
+		}
+
+		if (Input.GetAxis ("Vertical") > 0) {
+			moveDir += Vector3.up;
+		} else if (Input.GetAxis ("Vertical") < 0) {
+			moveDir -= Vector3.up;
+		}
+		moveDir.Normalize();
+
+		if (canMove) {
+			if (currPos != lastPos) {
+				if (!isMoving) {
+					sTime_Spd = Time.time;
+				}
+				isMoving = true;
+			} else {
+				isMoving = false;
+				currSpd = 0;
+			}
+			mySpd = spdSet [currSpd];
+		}
+		transform.position += moveDir * mySpd;
+	}
+
+	/*
 	void Move (){
 		//-------CHARACTER ROTATION-------//
 		SpriteRotation();
@@ -66,10 +99,11 @@ public class PlayerControls : MonoBehaviour {
 		}
 		transform.position = new Vector3 (transform.position.x + hAxis * mySpd, transform.position.y + vAxis * mySpd);
 	}
+	*/
 
 	void PlayerActions(){
 		//Sliding
-		if (Input.GetButtonUp ("Fire1")) {
+		if (Input.GetButtonDown ("Fire1")) {
 			if (!isSliding) {
 				sTime_Slide = Time.time;
 			}
@@ -84,6 +118,7 @@ public class PlayerControls : MonoBehaviour {
 		}
 	}
 
+	/*
 	void SpriteRotation(){
 		if (!isSliding) {
 			if (!ignoreInput) {
@@ -123,7 +158,8 @@ public class PlayerControls : MonoBehaviour {
 			}
 		}
 	}
-		
+	*/
+
 	void SpeedManagement(){
 		if (isMoving) {
 			if (Time.time > sTime_Spd + spd_IncTimeSet[Mathf.Clamp(currSpd-1, 0, spdSet.Length)] && currSpd < 2){
