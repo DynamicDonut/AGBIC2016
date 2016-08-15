@@ -3,9 +3,6 @@ using System.Collections;
 
 public class PlayerControls : MonoBehaviour {
 
-	public enum Direction { Up, UpLeft, Left, DownLeft, Down, DownRight, Right, UpRight }
-	//-----------------------0-----1-----2-------3--------4------5---------6-------7----
-
 	float sTime_Spd, sTime_Slide, sTime_inputIgnore;
 	public float[] spd_IncTimeSet = new float[2]; //0 = Time to Fast2, 1 = Time to Fast3
 	public float[] spd_DecTimeSet = new float[2]; //0 = Time to Fast2, 1 = Time to Fast1
@@ -23,8 +20,6 @@ public class PlayerControls : MonoBehaviour {
 	public bool canMove = true;
 	bool ignoreInput = false;
 	Vector3 currPos, lastPos;
-	public Direction myDir = Direction.Up;
-	Direction wrongDir;
 
 	void Start () {
 		lastPos = transform.position;
@@ -36,7 +31,6 @@ public class PlayerControls : MonoBehaviour {
 		Move ();
 		SpeedManagement ();
 		PlayerActions ();
-		anim.SetInteger ("Player Direction", (int)myDir);
 		anim.SetBool ("isMoving", isMoving);
 		anim.SetBool ("isSliding", isSliding);
 	}
@@ -59,7 +53,10 @@ public class PlayerControls : MonoBehaviour {
 		moveDir.Normalize();
 
 		if (canMove) {
-			if (currPos != lastPos) {
+			float lastDirX = Input.GetAxis ("Horizontal");
+			float lastDirY = Input.GetAxis ("Vertical");
+
+			if (lastDirX != 0 || lastDirY != 0) {
 				if (!isMoving) {
 					sTime_Spd = Time.time;
 				}
@@ -69,37 +66,10 @@ public class PlayerControls : MonoBehaviour {
 				currSpd = 0;
 			}
 			mySpd = spdSet [currSpd];
+			SpriteAnim (lastDirX, lastDirY);
 		}
 		transform.position += moveDir * mySpd;
 	}
-
-	/*
-	void Move (){
-		//-------CHARACTER ROTATION-------//
-		SpriteRotation();
-
-		//-------CHARACTER MOVEMENT-------//
-		currPos = transform.position;
-		if (canMove) {
-			if (currPos != lastPos) {
-				if (!isMoving) {
-					sTime_Spd = Time.time;
-				}
-				isMoving = true;
-			} else {
-				isMoving = false;
-				currSpd = 0;
-			}
-		}
-		if (canMove) {
-			mySpd = spdSet [currSpd];
-		}
-		if (Time.time > sTime_inputIgnore + inputIgnore_length) {
-			ignoreInput = false;
-		}
-		transform.position = new Vector3 (transform.position.x + hAxis * mySpd, transform.position.y + vAxis * mySpd);
-	}
-	*/
 
 	void PlayerActions(){
 		//Sliding
@@ -115,6 +85,24 @@ public class PlayerControls : MonoBehaviour {
 				currSpd = 0;
 			}
 			isSliding = false;
+		}
+	}
+
+	void SpriteAnim(float myX, float myY) {
+		if (myX > 0) {
+			anim.SetFloat ("LastDirX", 1f);
+		} else if (myX < 0) {
+			anim.SetFloat ("LastDirX", -1f);
+		} else {
+			anim.SetFloat ("LastDirX", 0f);
+		}
+
+		if (myY > 0) {
+			anim.SetFloat ("LastDirY", 1f);
+		} else if (myY < 0) {
+			anim.SetFloat ("LastDirY", -1f);
+		} else {
+			anim.SetFloat ("LastDirY", 0f);
 		}
 	}
 
@@ -171,38 +159,12 @@ public class PlayerControls : MonoBehaviour {
 				}
 			}
 		}
-		vAxis = 0f; hAxis = 0f;
-
-		if (myDir == Direction.Up) {
-			vAxis = 1f;
-		} else if (myDir == Direction.Down) {
-			vAxis = -1f;
-		} 
-
-		if (myDir == Direction.Left) {
-			hAxis = -1f;
-		} else if (myDir == Direction.Right) {
-			hAxis = 1f;
-		} 
-
-		if (myDir == Direction.UpLeft) {
-			vAxis = 1f; hAxis = -1f;
-		}
-		if (myDir == Direction.UpRight) {
-			vAxis = 1f; hAxis = 1f;
-		}
-		if (myDir == Direction.DownLeft) {
-			vAxis = -1f; hAxis = -1f;
-		}
-		if (myDir == Direction.DownRight) {
-			vAxis = -1f; hAxis = 1f;
-		}
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "NonMovable") {
 			//Debug.Log ("nooooooo");
-			wrongDir = myDir;
+
 			canMove = false;
 			isMoving = false;
 			mySpd = 0f;
