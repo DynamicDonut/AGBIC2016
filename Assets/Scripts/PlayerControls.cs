@@ -33,6 +33,8 @@ public class PlayerControls : MonoBehaviour {
 		PlayerActions ();
 		anim.SetBool ("isMoving", isMoving);
 		anim.SetBool ("isSliding", isSliding);
+		Debug.Log (Input.GetAxis ("Horizontal"));
+		Debug.Log (Input.GetAxis ("Vertical"));
 	}
 
 	void Move(){
@@ -66,7 +68,7 @@ public class PlayerControls : MonoBehaviour {
 				currSpd = 0;
 			}
 			mySpd = spdSet [currSpd];
-			SpriteAnim (lastDirX, lastDirY);
+			MoveAnim (lastDirX, lastDirY);
 		}
 		transform.position += moveDir * mySpd;
 	}
@@ -88,65 +90,39 @@ public class PlayerControls : MonoBehaviour {
 		}
 	}
 
-	void SpriteAnim(float myX, float myY) {
+	void MoveAnim(float myX, float myY) {
 		if (myX > 0) {
-			anim.SetFloat ("LastDirX", 1f);
+			anim.SetFloat ("DirX", 1f);
 		} else if (myX < 0) {
-			anim.SetFloat ("LastDirX", -1f);
+			anim.SetFloat ("DirX", -1f);
 		} else {
-			anim.SetFloat ("LastDirX", 0f);
+			anim.SetFloat ("DirX", 0f);
 		}
 
 		if (myY > 0) {
-			anim.SetFloat ("LastDirY", 1f);
+			anim.SetFloat ("DirY", 1f);
 		} else if (myY < 0) {
-			anim.SetFloat ("LastDirY", -1f);
+			anim.SetFloat ("DirY", -1f);
 		} else {
+			anim.SetFloat ("DirY", 0f);
+		}
+
+		if (myX <= -0.1f) {
+			anim.SetFloat ("LastDirX", -1f);
+		} else if (myX >= 0.1f) {
+			anim.SetFloat ("LastDirX", 1f);
+		} else if (myX == 0 && myY != 0) {
+			anim.SetFloat ("LastDirX", 0f);
+		}
+
+		if (myY <= -0.1f) {
+			anim.SetFloat ("LastDirY", -1f);
+		} else if (myY >= 0.1f) {
+			anim.SetFloat ("LastDirY", 1f);
+		} else if (myY == 0 && myX != 0) {
 			anim.SetFloat ("LastDirY", 0f);
 		}
 	}
-
-	/*
-	void SpriteRotation(){
-		if (!isSliding) {
-			if (!ignoreInput) {
-				if (Input.GetAxis ("Horizontal") > 0) {
-					myDir = Direction.Right;
-					GetComponent<SpriteRenderer> ().flipX = false;
-				} else if (Input.GetAxis ("Horizontal") < 0) {
-					myDir = Direction.Left;
-					GetComponent<SpriteRenderer> ().flipX = true;
-				}
-
-				if (Input.GetAxis ("Vertical") > 0) {
-					if (Input.GetAxis ("Horizontal") > 0) {
-						myDir = Direction.UpRight;
-					} else if (Input.GetAxis ("Horizontal") < 0) {
-						myDir = Direction.UpLeft;
-					} else {
-						myDir = Direction.Up;
-					}
-				} else if (Input.GetAxis ("Vertical") < 0) {
-					if (Input.GetAxis ("Horizontal") > 0) {
-						myDir = Direction.DownRight;
-					} else if (Input.GetAxis ("Horizontal") < 0) {
-						myDir = Direction.DownLeft;
-					} else {
-						myDir = Direction.Down;
-					}				
-				}
-				ignoreInput = true;
-				sTime_inputIgnore = Time.time;
-			}
-
-			if (!canMove && myDir != wrongDir) {
-				canMove = true;
-				isMoving = true;
-				mySpd = spdSet [currSpd];
-			}
-		}
-	}
-	*/
 
 	void SpeedManagement(){
 		if (isMoving) {
